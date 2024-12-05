@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0d0d0d;
+    background-color: #d2e9ff;
     font-family: 'Arial', sans-serif;
     margin: 0;
 }
@@ -13,12 +13,13 @@ body {
 }
 
 h1 {
-    color: #001eff;
+    color: black;
     margin-bottom: 20px;
 }
 
 .game-board {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 100px);
     grid-gap: 5px;
     margin-bottom: 20px;
@@ -27,26 +28,26 @@ h1 {
 .cell {
     width: 100px;
     height: 100px;
-    background-color: #1a1a1a;
-    border: 2px solid #e0e308;
+    background-color: #d2e9ff;
+    border: 2px solid #0585fd;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     cursor: pointer;
-    color: aqua;
+    color: black;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .cell:hover {
-    background-color: #4f8649;
+    background-color: blue;
 }
 
 .cell.winning {
     animation: neonGlow 1s infinite alternate;
 }
 
-@keyframes neonGlow {
+/* @keyframes neonGlow {
     from {
         transform: scale(1);
         box-shadow: 0 0 5px #00ff00, 0 0 10px #ec9004, 0 0 20px #00ffc8, 0 0 40px #3802eb;
@@ -55,15 +56,15 @@ h1 {
         transform: scale(1.1);
         box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #0008ff;
     }
-}
+} */
 
 button {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #1a1a1a;
-    color: #1c00ef;
-    border: 2px solid #b709df;
+    background-color: #0585fd;
+    color:black;
+    border: 2px solid blue;
     border-radius: 20px;
     transition: background-color 0.3s;
     margin-top: 40px;
@@ -75,20 +76,22 @@ button:hover {
     box-shadow: 0 0 2px aqua, 0 0 10px greenyellow, 0 0 20px blue, 0 0 30px violet;
 }
 button:active {
-    color: #0d0d0d;
-    background-color: #2bd810;
+    color:black;
+    background-color:white;
     box-shadow: 0 0 2px aqua, 0 0 10px greenyellow, 0 0 20px blue, 0 0 30px violet;
 }
 
 #status {
     margin-top: 20px;
     font-size: 1.2rem;
-    color: aqua;
+    color: blue;
     font-weight: 700;
+    background-color: #00ffc8;
+    border-radius: 50%;
 }
 
 h1 p{
     font-size: medium;
     display: inline;
-    color: #00ff00;
+    color: #0585fd;
 }
